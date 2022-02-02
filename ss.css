@@ -1,0 +1,86 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .p1, .p2, .p3, .p4{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .p1{
+    background-image:url('kerala2.jpg');
+    min-height:100%;
+  }
+  
+  .p2{
+    background-image:url('jaipur.jpg');
+    min-height:400px;
+  }
+  
+  .p3{
+    background-image:url('sikkim.jpg');
+    min-height:400px;
+  }
+
+  .p4{
+    background-image:url('ladhak.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .p{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .p .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .p .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .p1, .p2, .p3, .p4{
+      background-attachment:scroll;
+    }
+  }
+  
